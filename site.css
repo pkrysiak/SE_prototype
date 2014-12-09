@@ -1,0 +1,74 @@
+/*
+	SITE
+*/
+
+body {
+	padding-top: 60px;
+	background-color: #afa1a1;
+	
+}
+
+.container {
+	padding: 80px;
+	background-color: white;
+	margin: auto;
+	width: 800px;
+}
+
+/*
+	Q & A
+*/
+
+.question-title {
+	font-weight: bolder;
+	font-family: Tahoma;
+}
+
+.question, .replies {
+	width: 500px;
+	padding: 30px;
+	background-color: lightgrey;
+	margin-bottom: 10px;
+}
+
+.answer {
+	padding: 5px;
+	margin-bottom: 15px;
+	background-color: rgba(0,0,0,0.12)
+}
+
+
+/*
+	MESSAGES
+*/
+
+#messages {
+	height: 400px;
+	overflow-y: auto;
+}
+
+.message {
+	width: 80%;
+	margin-top: 30px;
+	padding: 10px;
+}
+
+.message .from {
+	font-weight: bolder;
+}
+
+.message .date {
+	font-size: small;
+	text-align: right;
+	color: gray;
+	margin-bottom: -30px;
+}
+
+.you {
+	background-color: lightgray;
+	margin-left: 20%;
+}
+
+.them {
+	background-color: #64a2b7;	
+}
