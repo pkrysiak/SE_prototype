@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ReasearchGate</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+    <link href='css/corgi.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/elusive-webfont.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/corgi.js" type="text/javascript"></script>
+    <!-- elusive icons ie7 support -->
+    <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      body {
+        padding-top: 80px; /* Only include this for the fixed top bar */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="index.html">ResearchGate</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="messages.html">Messages</a></li>
+              <li><a href="questions.html">Questions</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="login.html">Logout</a></li>
+            </ul>
+            <ul class="nav">
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search researcher">
+                  <a href="researchers.html" class="btn btn-default"><i class="fa fa-search"></i></a>
+                </div>                
+              </form>              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+
+          <div class="corgi_feed_well" id="new_msg_form" style="display:none">
+            <div class="individual_feed_item">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/msg.png" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <form>
+                        <input type="text" class="form-control" placeholder="Username">
+                        <textarea rows="3" class="span6" placeholder="Message content"></textarea><br/>
+                        <button class="btn" id="new_form_submit">
+                          <i class="fa fa-envelope"></i>
+                          Send
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>                              
+              </div>
+            </div>
+          </div>
+
+          <div class="corgi_feed_well">
+            
+            <div class="feed_stacked">
+              <div class="feed_item">
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/msg.png" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="msg_text">
+                      <p>
+                        Why don't you do some yoga ?. You should really try that.
+                      </p>
+                    </div>
+                    <div class="bottom_right">
+                      From <span>|</span> <a href="#" class="show_comment_link">olaf_z</a> <span>|</span> 5 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feed_stacked">
+              <div class="feed_item">
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/msg.png" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="msg_text">
+                      <p>
+                        Do you thing this is a bad neighborhood ?
+                        Yeea ?
+                      </p>
+                    </div>
+                    <div class="bottom_right">
+                      From <span>|</span> <a href="#" class="show_comment_link">pawel_k</a> <span>|</span> 11 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feed_stacked">
+              <div class="feed_item">
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/msg.png" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="msg_text">
+                      <p>
+                        I need you to send me those notes.... really fast.
+                      </p>
+                    </div>
+                    <div class="bottom_right">
+                      From <span>|</span> <a href="#" class="show_comment_link">david_b</a> <span>|</span> 11 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feed_stacked">
+              <div class="feed_item">
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/msg.png" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="msg_text">
+                      <p>
+                        What are the plans for the next wroc_love.rb conference ?
+                      </p>
+                    </div>
+                    <div class="bottom_right">
+                      From <span>|</span> <a href="#" class="show_comment_link">pedro_a</a> <span>|</span> 12 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feed_stacked">
+              <div class="feed_item">
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/msg.png" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="msg_text">
+                      <p>
+                        Which subjects are you planning to take next semester ?
+                      </p>
+                    </div>
+                    <div class="bottom_right">
+                      From <span>|</span> <a href="#" class="show_comment_link">bruno_p</a> <span>|</span> 23 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- end span8 -->
+        <div class="span4">
+          <div class="corgi_feed_well">
+            <hr class="feed_hr" />
+            <div class="sidebar_interior">
+              <button class="btn btn-default" id="new_message"><i class="fa fa-envelope"></i>New message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <br/><br/>
+    <div class="corgi_footer">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><a href="messages.html">Messages</a></li>
+              <li><a href="questions.html">Questions</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+   <script src="js/bootstrap.js"></script>
+  </body>
+</html>

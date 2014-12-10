@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ReasearchGate</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+    <link href='css/corgi.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/elusive-webfont.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/corgi.js" type="text/javascript"></script>
+    <!-- elusive icons ie7 support -->
+    <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      body {
+        padding-top: 80px; /* Only include this for the fixed top bar */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="index.html">ResearchGate</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li><a href="messages.html">Messages</a></li>
+              <li class="active"><a href="questions.html">Questions</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="login.html">Logout</a></li>
+            </ul>
+            <ul class="nav">
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search researcher">
+                  <a href="researchers.html" class="btn btn-default"><i class="fa fa-search"></i></a>
+                </div>                
+              </form>              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+
+          <div class="corgi_feed_well" id="new_question_form" style="display:none">
+            <div class="individual_feed_item">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/user1.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <form>
+                        <textarea rows="3" class="span6"></textarea><br/>
+                         <button type="submit" class="btn" id="new_form_submit">
+                          <i class="fa fa-plus"></i>
+                          Ask
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>                              
+              </div>
+            </div>
+          </div>
+
+          <div class="corgi_feed_well">
+            <div class="feed_stacked">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/user1.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <p>Can you recommend materials on the subject mentioned in the questions' title for someone who just starts his journey with computer modelling of dynamic complex systems, such as nervous system? The question is asked  particularly in the context of current distribution over the brain matter, scalp, and skin, applied e.g in the tDCS, tACS or tRNS protocols. Thank you in advance.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_area">
+                  <p>Add a comment</p>
+                  <form>
+                    <textarea rows="3" class="span6"></textarea><br/>
+                    <input type="submit" class="btn" />
+                  </form>
+                </div>
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="bottom_right">
+                      <a href="#">user1</a> <span>|</span> <a href="#" class="show_comment_link">comment</a> <span>|</span> 2 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feed_stacked last_feed_item">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/user1.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <p>Check this out <a href="http://briansimulator.org/">http://briansimulator.org/</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_area">
+                  <p>Add a comment</p>
+                  <form>
+                    <textarea rows="3" class="span6"></textarea><br/>
+                    <input type="submit" class="btn" />
+                  </form>
+                </div>
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">                    
+                    <div class="bottom_right">
+                      <a href="#">user2</a> <span>|</span> <a href="#"  class="show_comment_link">comment</a> <span>|</span> 2 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="corgi_feed_well">
+            <div class="individual_feed_item">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/user1.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <p>Is it possible to cluster two HP workstations?
+We have HP workstations one with 8 core Intel processors and 16 GB RAM and another with 12 core processor and 16 GB RAM. Are we able to cluster these two workstations and implement OpenMP threaded C code?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_area">
+                  <p>Add a comment</p>
+                  <form>
+                    <textarea rows="3" class="span6"></textarea><br/>
+                    <input type="submit" class="btn" />
+                  </form>
+                </div>
+                <hr class="feed_hr" />
+                <div class="bottom_meta">
+                  <div class="row">                    
+                    <div class="bottom_right">
+                      <a href="#">user3</a> <span>|</span> <a href="#" class="show_comment_link">comment</a> <span>|</span> 2 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- end span8 -->
+        <div class="span4">
+          <div class="corgi_feed_well">
+            <hr class="feed_hr" />
+            <div class="sidebar_interior">
+              <button class="btn btn-default" id="add_new_question"><i class="fa fa-plus"></i>Ask question</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <br/><br/>
+    <div class="corgi_footer">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><a href="messages.html">Messages</a></li>
+              <li><a href="questions.html">Questions</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+   <script src="js/bootstrap.js"></script>
+  </body>
+</html>
